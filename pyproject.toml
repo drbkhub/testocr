@@ -1,0 +1,13 @@
+[project]
+name = "testocr"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "doclayout-yolo>=0.0.3",
+    "easyocr>=1.7.2",
+    "huggingface-hub>=0.31.4",
+    "opencv-python>=4.11.0.86",
+    "pypdfium2>=4.30.1",
+]
