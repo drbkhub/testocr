@@ -119,6 +119,7 @@ if __name__ == "__main__":
 
     file_ocr = OCR(args.file, args.langs, args.index)
     data = file_ocr.process()
+    data.sort(key=lambda x: x["bbox"][1])
     result_json = json.dumps(data, ensure_ascii=False, indent=2)
     with open("result.json", "w") as f:
         f.write(result_json)
